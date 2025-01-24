@@ -6,7 +6,7 @@
 ![Alt text](https://github.com/user-attachments/assets/62ac3349-7776-43a7-be1c-d7699d50684a)
 
 
-![Alt text](https://github.com/user-attachments/assets/27da8a48-1db2-4403-bc10-ef5083988416)
+![Alt text](https://github.com/user-attachments/assets/7ba9730a-7c42-47df-8d09-6029d0a5c616)
 
 
 - [Online Demo](https://rezageshaniweb.github.io/Train-Ticket-localStorage/)
