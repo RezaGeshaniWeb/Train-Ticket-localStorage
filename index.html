@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket (localStorage)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+    <main>
+        <section class="w-full h-64 bg-first bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center">
+            <h1 class="w-[80%] bg-black text-white text-6xl p-1 bg-opacity-80 rounded-md mb-4">It's <del>Turtle</del>
+                Trian Time</h1>
+            <p class="w-[80%] bg-black text-white text-2xl p-1 bg-opacity-80 rounded-md">Train arrival and departure
+                information.</p>
+        </section>
+        <section class="w-full flex flex-col items-center">
+            <div class="border border-yellow-400 w-[80%] rounded-md my-7">
+                <h3
+                    class="w-full py-2 px-5 border-b border-b-yellow-400 text-yellow-950 bg-yellow-200 bg-opacity-50 font-bold text-lg">
+                    Your Tickets</h3>
+                <div class="w-full py-4 px-5 flex items-center justify-start *:font-semibold *:text-sm *:w-[20%]">
+                    <h4>Train Name</h4>
+                    <h4>Origin</h4>
+                    <h4>Destination</h4>
+                    <h4>Time</h4>
+                    <h4>Price</h4>
+                </div>
+                <div id="cart" class="w-full">
+                </div>
+            </div>
+            <div class="border border-yellow-400 w-[80%] pb-2 rounded-md mb-7">
+                <h3
+                    class="w-full py-2 px-5 border-b border-b-yellow-400 text-yellow-950 bg-yellow-200 bg-opacity-50 font-bold text-lg">
+                    Add Train
+                </h3>
+                <div class="w-full py-2 px-5 flex flex-col *:font-semibold *:text-sm">
+                    <p class="mb-2">Train Name</p>
+                    <select id="select-name"
+                        class="capitalize border border-slate-400 p-2 outline-none mb-6 *:capitalize *:font-semibold">
+                        <option selected disabled>select train name</option>
+                        <option value="fadak">fadak</option>
+                        <option value="qazal">qazal</option>
+                        <option value="simorgh">simorgh</option>
+                        <option value="setare sabz">setare sabz</option>
+                    </select>
+                    <p class="mb-2">Origin</p>
+                    <select id="select-origin"
+                        class="capitalize border border-slate-400 p-2 outline-none mb-6 *:capitalize *:font-semibold">
+                        <option selected disabled>select origin</option>
+                        <option value="Tehran">Tehran</option>
+                        <option value="Hamedan">Hamedan</option>
+                        <option value="Gilan">Gilan</option>
+                        <option value="Mashhad">Mashhad</option>
+                        <option value="Esfahan">Esfahan</option>
+                        <option value="Shiraz">Shiraz</option>
+                    </select>
+                    <p class="mb-2">Destination</p>
+                    <select id="select-destination"
+                        class="capitalize border border-slate-400 p-2 outline-none mb-6 *:capitalize *:font-semibold">
+                        <option selected disabled>select Destination</option>
+                        <option value="Tehran">Tehran</option>
+                        <option value="Hamedan">Hamedan</option>
+                        <option value="Gilan">Gilan</option>
+                        <option value="Mashhad">Mashhad</option>
+                        <option value="Esfahan">Esfahan</option>
+                        <option value="Shiraz">Shiraz</option>
+                    </select>
+                    <p class="mb-2">Time</p>
+                    <select id="select-time"
+                        class="capitalize border border-slate-400 p-2 outline-none mb-6 *:capitalize *:font-semibold">
+                        <option selected disabled>select train name</option>
+                        <option value="00:00">00:00</option>
+                        <option value="06:00">06:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="18:00">18:00</option>
+                    </select>
+                    <button id="submit" class="rounded-md bg-yellow-400 w-28 py-2 text-yellow-950 font-semibold">ADD TO
+                        CART</button>
+                </div>
+            </div>
+        </section>
+        <footer
+            class="w-[80%] mx-auto bg-[#09070a] bg-dark px-10 rounded-md flex justify-between items-center mb-7">
+            <div class="pt-10 pb-4 md:px-7 text-gray-300">
+                <p class="mb-8 leading-8">
+                    © 2024 • This is a demo from <strong
+                        class="uppercase tracking-wider gradient-text">Trian Ticket</strong> • Coded
+                    by
+                    <strong class="uppercase tracking-wider gradient-text">RezaGeshani</strong>
+                </p>
+                <div class="mb-6">
+                    <i class="bi bi-telephone-fill text-xl"></i>
+                    <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                        href="tel:09934774358">09934774358</a>
+                </div>
+                <div class="mb-6">
+                    <i class="bi bi-linkedin text-xl"></i>
+                    <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                        href="https://www.linkedin.com/in/reza-geshani-web">reza-geshani-web</a>
+                </div>
+                <div class="mb-6">
+                    <i class="bi bi-instagram text-xl"></i>
+                    <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                        href="https://www.instagram.com/rezageshani_web">@rezageshani_web</a>
+                </div>
+                <div class="mb-6">
+                    <i class="bi bi-github text-xl"></i>
+                    <a class="text-lg hover:underline ml-3 hover:text-[#1f9caa] transition-all duration-200"
+                        href="https://github.com/RezaGeshaniWeb/">RezaGeshaniWeb</a>
+                </div>
+            </div>
+            <div class="hidden w-[170px] h-[170px] rounded-full border-[1px] border-orange-300 outline-[1px] outline-orange-300 
+        outline-offset-8 md:flex items-center justify-center select-none z-50 group relative mr-7">
+                <div class="circle w-[165px] h-[165px] rounded-full">
+                    <img src="img/me5.webp" alt="" class="w-full h-full rounded-full object-cover">
+                </div>
+                <strong
+                    class="absolute top-[45%] right-[-92px] rotate-[90deg] text-[15px] italic text-orange-300">Frontend
+                    Developer</strong>
+                <a href="https://www.linkedin.com/in/reza-geshani-web"><i
+                        class="bi bi-linkedin group-hover:visible text-[26px] text-white absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] top-[-10px] left-[-58px]"></i></a>
+                <a href="https://www.instagram.com/rezageshani_web"><i
+                        class="bi bi-instagram group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[40px] left-[-80px]"></i></a>
+                <a href="https://github.com/RezaGeshaniWeb/"><i
+                        class="bi bi-github group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[90px] left-[-80px]"></i></a>
+                <a href="mailto:rezageshaniweb@gmail.com"><i
+                        class="bi bi-envelope-at group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[130px] left-[-58px]"></i></a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
