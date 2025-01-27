@@ -15,7 +15,7 @@
 
 - Created - 2025-01-25
 
-- Technologies Used - Html , Css , TailwindCSS , Javascript
+- Technologies Used - Html , Css , TailwindCSS , Javascript , localStorage
 
 - Role - Frontend
 
